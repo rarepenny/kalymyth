@@ -19,6 +19,9 @@ class World {
   addNode (node) {
     this.nodes.append(node);
   }
+  removeNode (node) {
+    this.nodes.splice(this.nodes.indexOf(node), 1);
+  }
 }
 
 class Node {
@@ -36,6 +39,16 @@ class Node {
     this.lockedProperties = ["name", "description", "light", "contents"];
     for prop in properties.keys() {
       this.property[prop] = properties[prop];
+    }
+  }
+  lockProperty(key) {
+    if !(key in this.lockedProperties) {
+      this.lockedProperties.append(key);
+    }
+  }
+  unlockProperty(key) {
+    if (key in this.lockedProperties) {
+      this.lockedProperties.splice(this.lockedProperties.indexOf(key), 1);
     }
   }
   expectProperty (key, value) {
@@ -77,4 +90,8 @@ class Node {
   listContents () {
     var outputParagraph = document.createElement("p");
   }
+}
+
+class Room extends Node {
+  
 }
