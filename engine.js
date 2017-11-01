@@ -76,6 +76,5 @@ class Node {
   }
   listContents () {
     var outputParagraph = document.createElement("p");
-    
   }
 }
