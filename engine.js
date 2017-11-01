@@ -46,8 +46,12 @@ class Node {
     }
   }
   safeSetProperty (key, value) {
-    if !(key in this.property) {
-      this.property[key] = value;
+    if (key in this.lockedProperties) {
+      throw "Tried to modify a protected property.";
+    } else {
+      if !(key in this.property) {
+        this.property[key] = value;
+      }
     }
   }
   getProperty (key) {
