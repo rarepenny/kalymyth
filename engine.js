@@ -58,7 +58,7 @@ class Node {
       return false;
     }
   }
-  safeSetProperty (key, value) {
+  safeSetProperty (key, value) 
     if (key in this.lockedProperties) {
       throw "Tried to modify a protected property.";
     } else {
@@ -97,4 +97,8 @@ class Room extends Node {
     properties["exits"] = exits;
     super(name, description, contents, properties));
   }
+}
+
+class Item extends Node {
+  constructor (name, alias, description="
 }
