@@ -93,5 +93,8 @@ class Node {
 }
 
 class Room extends Node {
-  
+  constructor (name, description="A nondescript room.", contents=[], exits={}, properties...) {
+    properties["exits"] = exits;
+    super(name, description, contents, properties));
+  }
 }
