@@ -33,6 +33,7 @@ class Node {
       "weight": -1,
       "volume": -1
     };
+    this.lockedProperties = ["name", "description", "light", "contents"];
     for prop in properties.keys() {
       this.property[prop] = properties[prop];
     }
@@ -52,8 +53,12 @@ class Node {
   getProperty (key) {
     return this.property[key];
   }
-  setProperty (key, value) {
-    this.property[key] = value;
+  setProperty (key, value, override=false) {
+    if (key in this.lockedProperties && override !== true) {
+      throw "Tried to modify a protected property.";
+    } else {
+      this.property[key] = value;
+    }
   }
   describe (override) {
     var outputParagraph = document.createElement("p");
@@ -64,5 +69,9 @@ class Node {
     }
     outputParagraph.appendChild(outputContent);
     document.getElementById("paragraphs").appendChild(outputParagraph);
+  }
+  listContents () {
+    var outputParagraph = document.createElement("p");
+    
   }
 }
