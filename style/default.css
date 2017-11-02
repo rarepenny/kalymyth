@@ -179,10 +179,10 @@ input#gameCommandInput {
   width: 250px;
   text-transform: uppercase;
 }
+#gameContent {
+  overflow-y: scroll;
+}
 table {
-  position: fixed;
-  top: 0;
-  left: 0;
   background: #fff;
   font-family: Courier, Monospace;
   width: 100%;
@@ -203,6 +203,8 @@ td {
                                   supported by Chrome and Opera */
 }
 canvas#visualInterface {
-  width: 100%;
-  
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  margin-top: 0px;
 }
