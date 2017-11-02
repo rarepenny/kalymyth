@@ -7,11 +7,11 @@ var plotTools = {
 			document.getElementById("paragraphs").appendChild(outputParagraph);
 		}
 	}
-  function grabInput () {
-  	var inputToReturn = document.getElementById("gameCommandInput").value;
-    document.getElementById("gameCommandInput").value = "";
-    return inputToReturn;
-  }
+	function grabInput () {
+  		var inputToReturn = document.getElementById("gameCommandInput").value;
+    		document.getElementById("gameCommandInput").value = "";
+    		return inputToReturn;
+	}
 }
 
 var messageDefaults = {
