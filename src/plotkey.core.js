@@ -1,21 +1,13 @@
 var plotTools = {
-	flush: function(max) {
-		max = $("#paragraphs").length - max;
-		if (max > 0) {
-			$("#paragraphs").slice(0, max - 1).remove();
-		}
-	},
-	writeParagraph: function (paragraph) {
-		var outputParagraph = document.createElement("p");
-		var outputContent = document.createTextNode(paragraph);
-		outputParagraph.appendChild(outputContent);
-		$("#paragraphs").append(outputParagraph);
-		plotTools.flush(7);
+	writeParagraph: function (text) {
+		var paragraph = $("<p></p>");
+		paragraph.text(text);
+		$("#paragraphs").append(paragraph);
 	},
 	grabInput: function () {
   		var inputToReturn = $("#gameCommandInput").val();
-    	$("#gameCommandInput").val('');
-    	return inputToReturn;
+    		$("#gameCommandInput").val('');
+    		return inputToReturn;
 	}
 }
 
