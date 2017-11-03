@@ -1,6 +1,7 @@
- var plotTools = {
+var plotTools = {
 	writeParagraph: function (text, cause="?") {
 		var paragraph = $("<p data-cause=\"" + cause + "\"></p>");
+		// Data-cause allows the player to view the command which caused the output of this paragraph by mousing over it.
 		paragraph.text(text);
 		$("#paragraphs").append(paragraph);
 	},
