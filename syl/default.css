@@ -161,7 +161,6 @@ input#gameCommandInput {
   font-family: Courier, Monospace;
   color: #fff;
   width: 250px;
-  text-transform: uppercase;
 }
 table {
   position: fixed;
