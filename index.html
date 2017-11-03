@@ -1,20 +1,22 @@
 <!DOCTYPE html>
+<html>
 <head>
 <title>Plotkey</title>
-<link rel="stylesheet" type="text/css" href="./style/default.css" />
+<link rel="stylesheet" type="text/css" href="./syl/default.css" />
+<script src="./src/jquery-3.2.1.min.js"></script>
+<script src="./src/plotkey.core.js"></script>
 </head>
 <body>
 <div id="display">
-  <table class="noselect">
-    <tr><td id="turns">Turns: 0</td><td id="title">Plotkey Demo</td><td id="score">Score: 0</td></tr>
-  </table>
-  <canvas id="visualInterface"></canvas>
+<table class="noselect">
+<tr><td id="turns">Turns: 0</td><td id="title">Plotkey Demo</td><td id="score">Score: 0</td></tr>
+</table>
 </div>
-<span id="gameContent">
-  <span id="paragraphs" class="noselect">
-    <p>Welcome to the Plotkey demo! This is an interactive tutorial which will teach you how to use Plotkey to create interactive stories.</p>
-    <p>Start by typing <span class="violetOption">look</span> into the command bar.</p>
-  </span>
-  <input id="gameCommandInput" placeholder="enter a command or type help">
-</span>
+<span id="gameContent"><span id="paragraphs" class="noselect"><p>
+Welcome to the Plotkey demo! This is an interactive tutorial which will teach you how to use Plotkey to create interactive stories.
+</p>
+<p>
+Start by typing <span class="violetOption">look</span> into the command bar.</p></span>
+<input id="gameCommandInput" placeholder="enter a command or type help"></span>
 </body>
+</html>
