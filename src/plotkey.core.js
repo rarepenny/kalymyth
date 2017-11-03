@@ -1,6 +1,6 @@
-var plotTools = {
-	writeParagraph: function (text) {
-		var paragraph = $("<p></p>");
+ var plotTools = {
+	writeParagraph: function (text, cause="?") {
+		var paragraph = $("<p data-cause=\"" + cause + "\"></p>");
 		paragraph.text(text);
 		$("#paragraphs").append(paragraph);
 	},
