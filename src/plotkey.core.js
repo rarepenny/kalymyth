@@ -12,7 +12,7 @@ function grabInput () {
 
 function parse (userInput) {
 	userInput = userInput.split(/\s+/g, 1);
-	if (userInput[0] in ['take', 'drop', 'go', 'see']) {
+	if (['take', 'drop', 'go', 'see'].includes(userInput[0])) {
 		writeParagraph('valid input');
 	} else {
 		writeParagraph('huh?');
