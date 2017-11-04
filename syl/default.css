@@ -108,41 +108,17 @@ span#paragraphs p.centered {
 span#paragraphs p span.bold {
   font-weight: bold;
 }
-span#paragraphs p span.greenOption {
-  font-weight: bold;
-  color: limeGreen;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-span#paragraphs p span.violetOption, span#paragraphs p span.purpleOption {
-  font-weight: bold;
-  color: violet;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-span#paragraphs p span.yellowOption {
-  font-weight: bold;
-  color: yellow;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-span#paragraphs p span.blueOption {
-  font-weight: bold;
-  color: blue;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-span#paragraphs p span.redOption {
-  font-weight: bold;
-  color: red;
-  text-transform: uppercase;
-  cursor: pointer;
-}
 span#paragraphs p span.italic {
   text-decoration: italic;
 }
 span#paragraphs p span.underlined {
   text-decoration: underline;
+}
+span#paragraphs p span.gameShortcut {
+  font-weight: bold;
+  color: violet;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 ::selection {
   background: #fff;
