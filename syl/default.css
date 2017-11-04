@@ -89,6 +89,9 @@ input, select {
 /*
 CSS for HTML page
 */
+span#gameContent {
+  margin-left: 50px;
+}
 span#paragraphs p {
   font-family: Courier, Monospace;
   font-size: 1em;
