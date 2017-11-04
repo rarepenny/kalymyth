@@ -1,4 +1,4 @@
-function writeParagraph (text]) {
+function writeParagraph (text) {
 	var paragraph = $("<p></p>");
 	paragraph.text(text);
 	$("#paragraphs").append(paragraph);
