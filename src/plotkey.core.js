@@ -11,7 +11,7 @@ function grabInput () {
 }
 
 function parse (userInput) {
-	userInput = userInput.split(/\s+/, 1);
+	userInput = userInput.split(/\s+/g, 1);
 	if (userInput[0] in ['take', 'drop', 'go', 'see']) {
 		writeParagraph('valid input');
 	} else {
