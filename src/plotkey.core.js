@@ -21,7 +21,7 @@ function parse (userInput) {
 }
 
 $(document).ready(function () {
-	$("#gameCommandInput").on('keyup', function(e) {
+	$(document).on('keyup', function(e) {
 		if (e.keyCode === 13) {
 			parse(grabInput());
 		}
