@@ -1,6 +1,5 @@
-function writeParagraph (text, cause="?") {
-	var paragraph = $("<p data-cause=\"" + cause + "\"></p>");
-	// Data-cause allows the player to view the command which caused the output of this paragraph by mousing over it.
+function writeParagraph (text]) {
+	var paragraph = $("<p></p>");
 	paragraph.text(text);
 	$("#paragraphs").append(paragraph);
 }
@@ -14,9 +13,9 @@ function grabInput () {
 function parse (userInput) {
 	userInput = userInput.split(/\s+/, 1);
 	if (userInput[0] in ['take', 'drop', 'go', 'see']) {
-		writeParagraph('valid input', userInput[0]);
+		writeParagraph('valid input');
 	} else {
-		writeParagraph('huh?', userInput[0]);
+		writeParagraph('huh?');
 	}
 }
 
