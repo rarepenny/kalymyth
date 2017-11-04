@@ -28,7 +28,7 @@ $(document).ready(function () {
 	});
 	
 	$(".gameShortcut").on('click', function(e) {
-		$("#gameCommandInput").val(e.currentTarget);
+		$("#gameCommandInput").val(e.currentTarget.innerText);
 	});
 });
 
