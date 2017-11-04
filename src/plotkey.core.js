@@ -26,6 +26,10 @@ $(document).ready(function () {
 			parse(grabInput());
 		}
 	});
+	
+	$(".gameShortcut").on('click', function(e) {
+		$("#gameCommandInput").val(e.currentTarget);
+	});
 });
 
 var messageDefaults = {
