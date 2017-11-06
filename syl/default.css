@@ -93,7 +93,7 @@ span#gameContent {
   margin-left: 50px;
 }
 span#paragraphs p {
-  font-family: Courier, Monospace;
+  font-family: 'avenir next', avenir, sans-serif;
   font-size: 1em;
   color: #fff;
   margin: 10px;
@@ -137,7 +137,7 @@ input#gameCommandInput {
   border: 1px solid white;
   border-radius: 5px;
   background-color: transparent;
-  font-family: Courier, Monospace;
+  font-family: 'avenir next', avenir, sans-serif;
   color: #fff;
   width: 250px;
 }
@@ -146,7 +146,7 @@ table {
   top: 0;
   left: 0;
   background: #fff;
-  font-family: Courier, Monospace;
+  font-family: 'avenir next', avenir, sans-serif;
   width: 100%;
   margin: 0px;
   height: 1.4em;
