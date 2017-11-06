@@ -43,6 +43,9 @@ class GameObject {
 		this.attributes = {
 			"name": name,
 			"description": description || messageDefaults["NO_DESCRIPTION"],
+			"contents": [],
+			"light": 0,
+			"aliases": [],
 		};
 		for (a in attributes.keys()) {
 			this.attributes[a] = attributes[a];
