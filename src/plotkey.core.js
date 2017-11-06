@@ -39,6 +39,7 @@ var messageDefaults = {
 
 class GameObject {
 	constructor (name, description, attributes) {
+		this.protectedAttributes = ["name", "description", "contents", "light", "aliases"];
 		this.attributes = {
 			"name": name,
 			"description": description || messageDefaults["NO_DESCRIPTION"],
@@ -65,7 +66,15 @@ class GameObject {
 		if (this.attributeExists(key)) {
 			return this.attributes[key];
 		} else {
-			throw "You are an idiot.";
+			return undefined;
 		}
+	}
+	unlockAttribute (key) {
+		this.protectedAttributes.filter(function(word) {
+			return (word !== key);
+		}
+	}
+	lockAttribute (key) {
+		this.protectedAttributes.append(key);		
 	}
 }
