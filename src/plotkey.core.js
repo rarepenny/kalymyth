@@ -47,15 +47,25 @@ class GameObject {
 			this.attributes[a] = attributes[a];
 		}
 	}
-	attributeExists(attributeName) {
+	attributeExists (attributeName) {
 		if (this.attributes.keys().includes(attributeName)) {
 			return true;
 		}
 		return false;
 	}
-	attributeEquals(key, value) {
+	attributeEquals (key, value) {
 		if (this.attributes[key] == value) {
 			return true;
+		}
+	}
+	setAttribute (key, value) {
+		this.attributes[key] = value;
+	}
+	getAttribute (key) {
+		if (this.attributeExists(key)) {
+			return this.attributes[key];
+		} else {
+			throw "You are an idiot.";
 		}
 	}
 }
