@@ -34,4 +34,18 @@ $(document).ready(function () {
 
 var messageDefaults = {
 	"TOO_DARK": "It is too dark to make out anything.",
+	"NO_DESCRIPTION": "You see nothing special about [the noun].",
+}
+
+class GameObject {
+	constructor (name, description, attributes) {
+		this.attributes = {
+			"name": name,
+			"description": description || messageDefaults["NO_DESCRIPTION"],
+		};
+		for (a in attributes.keys()) {
+			this.attributes[a] = attributes[a];
+		}
+	}
+	function attributeExists(
 }
