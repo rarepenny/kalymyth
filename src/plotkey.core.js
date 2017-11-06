@@ -72,7 +72,7 @@ class GameObject {
 	unlockAttribute (key) {
 		this.protectedAttributes.filter(function(word) {
 			return (word !== key);
-		}
+		});
 	}
 	lockAttribute (key) {
 		this.protectedAttributes.append(key);		
