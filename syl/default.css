@@ -24,6 +24,7 @@ time, mark, audio, video {
  font-size:100%;
  vertical-align:baseline;
  background:transparent;
+ letter-spacing: 1px;
 }
 body {
  line-height:1;
