@@ -47,5 +47,15 @@ class GameObject {
 			this.attributes[a] = attributes[a];
 		}
 	}
-	function attributeExists(
+	attributeExists(attributeName) {
+		if (this.attributes.keys().includes(attributeName)) {
+			return true;
+		}
+		return false;
+	}
+	attributeEquals(key, value) {
+		if (this.attributes[key] == value) {
+			return true;
+		}
+	}
 }
