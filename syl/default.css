@@ -17,3 +17,12 @@ h1 {
   color: #a22;
   cursor: pointer;
 }
+
+input#gameCommandInput {
+  background: rgba(38, 38, 38, 0.2);
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: georgia, serif;
+}
