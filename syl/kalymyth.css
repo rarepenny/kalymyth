@@ -4,7 +4,7 @@ body {
 
 * {
   font-family: georgia, serif;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #222;
 }
 
@@ -23,6 +23,6 @@ input#gameCommandInput {
   border: 0px;
   border-radius: 5px;
   padding: 5px;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: georgia, serif;
 }
