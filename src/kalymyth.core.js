@@ -1,3 +1,22 @@
+String.prototype.replaceKeys = String.prototype.replaceKeys ||
+function () {
+    "use strict";
+    var str = this.toString();
+    if (arguments.length) {
+        var t = typeof arguments[0];
+        var key;
+        var args = ("string" === t || "number" === t) ?
+            Array.prototype.slice.call(arguments)
+            : arguments[0];
+
+        for (key in args) {
+            str = str.replace(new RegExp("\\{\\{" + key + "\\}\\}", "gi"), args[key]);
+        }
+    }
+
+    return str;
+};
+
 function writeParagraph (text) {
 	var paragraph = $("<p></p>");
 	paragraph.text(text);
@@ -34,18 +53,19 @@ $(document).ready(function () {
 
 var messageDefaults = {
 	"TOO_DARK": "It is too dark to make out anything.",
-	"NO_DESCRIPTION": "You see nothing special about [the noun].",
+	"NO_DESCRIPTION": "You see nothing special about {{the noun}}.",
 }
 
 class GameObject {
 	constructor (name, description, attributes) {
+		this.index = 
 		this.protectedAttributes = ["name", "description", "contents", "light", "aliases"];
 		this.attributes = {
 			"name": name,
 			"description": description || messageDefaults["NO_DESCRIPTION"],
 			"contents": [],
 			"light": 0,
-			"aliases": [],
+			"aliases": []
 		};
 		for (a in attributes.keys()) {
 			this.attributes[a] = attributes[a];
