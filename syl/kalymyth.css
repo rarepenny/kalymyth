@@ -14,15 +14,17 @@ h1 {
 
 .gameOption {
   font-weight: bold;
-  color: #a22;
+  color: #222;
   cursor: pointer;
 }
 
 input#gameCommandInput {
-  background: rgba(38, 38, 38, 0.2);
+  background: rgba(76, 76, 76, 0.1);
   border: 0px;
   border-radius: 5px;
   padding: 5px;
   font-size: 1em;
   font-family: georgia, serif;
+  color: #222;
+  box-shadow: 0 0 -2px #222;
 }
