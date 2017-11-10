@@ -4,12 +4,16 @@ body {
 
 * {
   font-family: georgia, serif;
-  font-size: 12px;
   color: #222;
 }
 
 h1 {
   font-style: italic;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1em;
 }
 
 .gameOption {
@@ -26,5 +30,5 @@ input#gameCommandInput {
   font-size: 12px;
   font-family: georgia, serif;
   color: #222;
-  box-shadow: 0 0 -3px #222;
+  box-shadow: 1px 1px 3px #222 inset;
 }
