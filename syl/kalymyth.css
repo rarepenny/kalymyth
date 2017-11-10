@@ -32,4 +32,5 @@ input#gameCommandInput {
   font-family: georgia, serif;
   color: #222;
   box-shadow: 1px 1px 3px #222 inset;
+  width: 300px;
 }
