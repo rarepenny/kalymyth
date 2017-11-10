@@ -28,7 +28,7 @@ input#gameCommandInput {
   border: 0px;
   border-radius: 6px;
   padding: 6px;
-  font-size: 12px;
+  font-size: 1em;
   font-family: georgia, serif;
   color: #222;
   box-shadow: 1px 1px 3px #222 inset;
