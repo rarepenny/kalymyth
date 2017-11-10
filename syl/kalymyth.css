@@ -25,8 +25,8 @@ p {
 input#gameCommandInput {
   background: rgba(76, 76, 76, 0.1);
   border: 0px;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 6px;
+  padding: 6px;
   font-size: 12px;
   font-family: georgia, serif;
   color: #222;
